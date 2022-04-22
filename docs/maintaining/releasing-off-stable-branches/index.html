@@ -12,25 +12,25 @@
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Razorops | Jekyll • Simple, blog-aware, static sites</title>
+<title>Releasing off older stable branches | Jekyll • Simple, blog-aware, static sites</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Razorops" />
+<meta property="og:title" content="Releasing off older stable branches" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Razorops is a complete container native CI/CD solution handling all aspects of the software lifecycle from the moment a commit is created until it is deployed to production. Razorops has all the capabilities that you would expect from a CI/CD platform such as Code compilation/build Artifact packaging Testing Automation(unit, integration, acceptance etc.) Faster builds and shipping to production" />
-<meta property="og:description" content="Razorops is a complete container native CI/CD solution handling all aspects of the software lifecycle from the moment a commit is created until it is deployed to production. Razorops has all the capabilities that you would expect from a CI/CD platform such as Code compilation/build Artifact packaging Testing Automation(unit, integration, acceptance etc.) Faster builds and shipping to production" />
-<link rel="canonical" href="https://jekyllrb.com/docs/continuous-integration/razorops/" />
-<meta property="og:url" content="https://jekyllrb.com/docs/continuous-integration/razorops/" />
+<meta name="description" content="Apart from having releases cut from the default master branch, Jekyll Core may occasionally cut releases containing security patches and critical bug-fixes for older versions under maintenance. Such releases are cut from specially named branches, following the pattern [x].[y]-stable where [x] denotes semver-major-version and [y], the semver-minor-version. For example, the branch 3.9-stable refers to commits released as part of jekyll-3.9.x series." />
+<meta property="og:description" content="Apart from having releases cut from the default master branch, Jekyll Core may occasionally cut releases containing security patches and critical bug-fixes for older versions under maintenance. Such releases are cut from specially named branches, following the pattern [x].[y]-stable where [x] denotes semver-major-version and [y], the semver-minor-version. For example, the branch 3.9-stable refers to commits released as part of jekyll-3.9.x series." />
+<link rel="canonical" href="https://jekyllrb.com/docs/maintaining/releasing-off-stable-branches/" />
+<meta property="og:url" content="https://jekyllrb.com/docs/maintaining/releasing-off-stable-branches/" />
 <meta property="og:site_name" content="Jekyll • Simple, blog-aware, static sites" />
 <meta property="og:image" content="https://jekyllrb.com/img/jekyll-og.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-21T20:12:34-07:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://jekyllrb.com/img/jekyll-og.png" />
-<meta property="twitter:title" content="Razorops" />
+<meta property="twitter:title" content="Releasing off older stable branches" />
 <meta name="twitter:site" content="@jekyllrb" />
 <meta name="google-site-verification" content="onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-21T20:12:34-07:00","datePublished":"2022-04-21T20:12:34-07:00","description":"Razorops is a complete container native CI/CD solution handling all aspects of the software lifecycle from the moment a commit is created until it is deployed to production. Razorops has all the capabilities that you would expect from a CI/CD platform such as Code compilation/build Artifact packaging Testing Automation(unit, integration, acceptance etc.) Faster builds and shipping to production","headline":"Razorops","image":"https://jekyllrb.com/img/jekyll-og.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jekyllrb.com/docs/continuous-integration/razorops/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyllrb.com/img/logo-2x.png"}},"url":"https://jekyllrb.com/docs/continuous-integration/razorops/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-21T20:12:34-07:00","datePublished":"2022-04-21T20:12:34-07:00","description":"Apart from having releases cut from the default master branch, Jekyll Core may occasionally cut releases containing security patches and critical bug-fixes for older versions under maintenance. Such releases are cut from specially named branches, following the pattern [x].[y]-stable where [x] denotes semver-major-version and [y], the semver-minor-version. For example, the branch 3.9-stable refers to commits released as part of jekyll-3.9.x series.","headline":"Releasing off older stable branches","image":"https://jekyllrb.com/img/jekyll-og.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jekyllrb.com/docs/maintaining/releasing-off-stable-branches/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyllrb.com/img/logo-2x.png"}},"url":"https://jekyllrb.com/docs/maintaining/releasing-off-stable-branches/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!--[if lt IE 9]>
@@ -70,7 +70,7 @@
   <nav class="mobile-nav show-on-mobiles">
     <ul>
   <li><a href="/">Home</a></li>
-    <li class="current" ><a href="/docs/">Docs</a></li>
+    <li class="current"><a href="/docs/">Docs</a></li>
     <li><a href="/resources/">Resources</a></li>
     <li><a href="/news/">News</a></li>
     <li><a href="https://github.com/jekyll/jekyll">GitHub</a></li>
@@ -124,60 +124,81 @@
 <div class="unit four-fifths">
       <article>
         <div class="improve right hide-on-mobiles">
-          <a data-proofer-ignore href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/continuous-integration/razorops.md"><i
-             class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+          <a data-proofer-ignore href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/maintaining/releasing-off-stable-branches.md"><i class="fa fa-pencil"></i>  Improve this page</a>
         </div>
-        <h1>Razorops</h1>
-        <p><a href="https://razorops.com/">Razorops</a> is a complete container native CI/CD solution handling all aspects of the software lifecycle from the moment a commit is created until it is deployed to production.
-Razorops has all the capabilities that you would expect from a CI/CD platform such as</p>
+        <h1>Releasing off older stable branches</h1>
+        <p>Apart from having releases cut from the default <code class="language-plaintext highlighter-rouge">master</code> branch, Jekyll Core may occasionally cut releases containing security patches and
+critical bug-fixes for older versions under maintenance. Such releases are cut from specially named branches, following the pattern
+<code class="language-plaintext highlighter-rouge">[x].[y]-stable</code> where <code class="language-plaintext highlighter-rouge">[x]</code> denotes semver-major-version and <code class="language-plaintext highlighter-rouge">[y]</code>, the semver-minor-version. For example, the branch <code class="language-plaintext highlighter-rouge">3.9-stable</code> refers to
+commits released as part of <code class="language-plaintext highlighter-rouge">jekyll-3.9.x</code> series.</p>
+
+<p>Co-ordinating a release off a <code class="language-plaintext highlighter-rouge">*-stable</code> branch is complicated mainly because the default branch has to inevitably reflect the release as well.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>The maintainer has to have <strong>write-access</strong> to both the concerned <code class="language-plaintext highlighter-rouge">*-stable</code> and <code class="language-plaintext highlighter-rouge">master</code> branches.</li>
+  <li>The maintainer needs to complete the task using their <strong>local CLI program</strong> instead of dispatching via GitHub Web UI.</li>
+  <li>The maintainer is abreast with the workflow to <a href="/docs/maintaining/releasing-a-new-version/">release off <code class="language-plaintext highlighter-rouge">master</code></a>. The
+procedure documented in the following section is an abridged adaptation of the workflow for <code class="language-plaintext highlighter-rouge">master</code>.</li>
+  <li>A release post has been drafted and <strong>is awaiting publish to <code class="language-plaintext highlighter-rouge">master</code></strong> via an approved pull request.</li>
+  <li>Stable internet connection.</li>
+</ul>
+
+<h2 id="trigger-release-workflow">Trigger release workflow</h2>
+
 <ol>
-  <li>Code compilation/build</li>
-  <li>Artifact packaging</li>
-  <li>Testing Automation(unit, integration, acceptance etc.)</li>
-  <li>Faster builds and shipping to production</li>
+  <li>Ensure that you’ve <strong>checked out the concerned <code class="language-plaintext highlighter-rouge">*-stable</code> branch</strong> and is up-to-date with its counterpart at <code class="language-plaintext highlighter-rouge">jekyll/jekyll</code> at GitHub.</li>
+  <li>Bump the <code class="language-plaintext highlighter-rouge">VERSION</code> string in <code class="language-plaintext highlighter-rouge">lib/jekyll/version.rb</code>.</li>
+  <li>Update the <strong>History document</strong> as documented <a href="/docs/maintaining/releasing-a-new-version/#update-the-history-document">here</a>.<br>
+(<strong>IMPORTANT: Do not run <code class="language-plaintext highlighter-rouge">rake site:generate</code> on the stable branch though</strong>).</li>
+  <li>Copy the entire History section pertaining to current release and paste into a new tab / window of your text-editor. We will use this
+temporary snippet at a future stage.</li>
+  <li>Commit changes to the version-file and History document with commit message <code class="language-plaintext highlighter-rouge">Release :gem: v[CURRENT_VERSION]</code>.</li>
+  <li>Push commit to upstream remote <code class="language-plaintext highlighter-rouge">jekyll/jekyll</code> at GitHub.</li>
 </ol>
 
-<p>Razorops is a single solution that implements the whole pipeline from start to deployment.</p>
-
-<p>With <a href="https://razorops.com/">Razorops</a> you can set up your Jekyll websites project’s build, test, and deploy steps just in 15 min. It supports <a href="https://github.com">GitHub</a>, <a href="https://bitbucket.org/">Bitbucket</a>, and <a href="https://gitlab.com">GitLab</a> repositories. The following guide will show you how to set up a free environment to build, test and deploy your Jekyll project.</p>
-
-<h2 id="1-getting-started">1. Getting started</h2>
+<h2 id="publish-release-post">Publish release post</h2>
 
 <ol>
-  <li>Log in at <a href="https://razorops.com/">https://razorops.com/</a> with your GitHub/Bitbucket or Gitlab account</li>
-  <li>Create a pipeline, choose your Git provider and select your Jekyll Project</li>
-  <li>Add .razorops.yaml file in your root directory of your project</li>
-  <li>Add environment var and your deployment is ready</li>
-  <li>Add build and deployment steps as shown in this post <a href="https://razorops.com/blog/how-to-deploy-a-static-website-to-aws-s3-with-razorops-ci-cd/">How to Deploy a Static Website to AWS S3 with Razorops CI/CD</a></li>
+  <li>Ensure the <code class="language-plaintext highlighter-rouge">Release Gem</code> workflow has completed successfully.</li>
+  <li>Merge release-post pull request to <code class="language-plaintext highlighter-rouge">master</code>.</li>
 </ol>
 
-<h2 id="2-how-it-works">2. How it works</h2>
+<h2 id="update-default-branch-to-reflect-release-off-the-stable-branch">Update default branch to reflect release off the stable branch</h2>
 
-<p>Whenever you make a push to the selected branch, your steps auto runs as defined in .razorops.yaml file</p>
+<ol>
+  <li>Locally, check out <code class="language-plaintext highlighter-rouge">master</code> and ensure it is up-to-date with its remote counterpart at <code class="language-plaintext highlighter-rouge">jekyll/jekyll</code> at GitHub.</li>
+  <li>Update History document using the snippet in the temporary tab / window created earlier. The various sections in the History document are
+primarily in reverse chronological order and secondarily scoped to the semver-major-version. For example, a release section for <code class="language-plaintext highlighter-rouge">v3.9.2</code>
+will be listed above the section for <code class="language-plaintext highlighter-rouge">v3.9.1</code> but under release sections for v4.x.
+The snippet stashed earlier has to be injected into the correct location manually.</li>
+  <li>Optionally, update <code class="language-plaintext highlighter-rouge">VERSION</code> string in <code class="language-plaintext highlighter-rouge">lib/jekyll/version.rb</code>. (<em>If existing version is lesser than latest version</em>).</li>
+  <li>Now <strong>run <code class="language-plaintext highlighter-rouge">rake site:generate</code></strong> to update various meta files:
+    <ul>
+      <li>docs/_config.yml</li>
+      <li>docs/_docs/history.md</li>
+      <li>docs/latest_version.txt</li>
+    </ul>
+  </li>
+  <li>Commit changes to various meta files with commit message <code class="language-plaintext highlighter-rouge">Release :gem: v[CURRENT_VERSION]</code>.</li>
+  <li>Push commit to upstream remote.</li>
+</ol>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">tasks</span><span class="pi">:</span>
-    <span class="na">build-and-deploy</span><span class="pi">:</span>
-      <span class="na">steps</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="s">checkout</span>
-      <span class="c1"># commands to build jekyll website</span>
-      <span class="pi">-</span> <span class="na">commands</span><span class="pi">:</span>
-        <span class="pi">-</span> <span class="s">bundle install</span>
-        <span class="pi">-</span> <span class="s">JEKYLL_ENV=production bundle exec jekyll build</span>
-      <span class="c1"># Commands to upload static pages folder to AWS S3 or ftp</span>
-      <span class="c1"># Set AWS access key &amp; secrets environment variables under </span>
-      <span class="c1"># Razorops dashboard project pipelines </span>
-      <span class="pi">-</span> <span class="na">commands</span><span class="pi">:</span>
-        <span class="pi">-</span> <span class="s">aws s3 rm s3://$AWS_S3_BUCKET --recursive</span>
-        <span class="pi">-</span> <span class="s">aws s3 cp _site s3://$AWS_S3_BUCKET --recursive</span>
-        <span class="na">if</span><span class="pi">:</span> <span class="s">branch == 'main'</span>
+<h2 id="publish-github-release">Publish GitHub Release</h2>
 
-</code></pre></div></div>
+<p>Unlike releases cut off the <code class="language-plaintext highlighter-rouge">master</code> branch, our JekyllBot does not automatically create and publish a GitHub Release for tags created from
+<em>non-default</em> branches. Therefore, the maintainer has to <strong>manually create and publish</strong> the concerned GitHub Release.</p>
+<ol>
+  <li>Choose the newly pushed tag.</li>
+  <li>Title is same as the name of the selected tag.</li>
+  <li>The release snippet stashed previously forms the body.</li>
+  <li>Delete the snippet’s title (<code class="language-plaintext highlighter-rouge">## x.y.z / YYYY-MM-DD</code>) from the release body.</li>
+  <li>Publish.</li>
+</ol>
 
-<p>Build step generates _site folder as Jekyll default and during deploy you will able to ship code to s3 or any ftp server you can define any command to ship your website code to server.</p>
-
-<p>Razorops is FREE for opensource projects, Try it Now
-<a href="https://razorops.com/">https://razorops.com/</a></p>
-
+<p>Note: The GitHub Release may optionally be <em>drafted</em> prior to updating the default branch and then <em>published</em> immediately after pushing the
+update commit to the default branch to streamline the procedure.</p>
 
       </article>
     </div>
@@ -234,7 +255,7 @@ Razorops has all the capabilities that you would expect from a CI/CD platform su
   <div class="grid">
     <div class="unit one-third center-on-mobiles">
       <p>Jekyll is lovingly maintained by the <a href="/team/">core team</a> of volunteers. </p>
-      <p>The contents of this website are <br />&copy;&nbsp;2022 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
+      <p>The contents of this website are <br>© 2022 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT License</a>.</p>
     </div>
     <div class="unit two-thirds align-right center-on-mobiles">
       <p>
